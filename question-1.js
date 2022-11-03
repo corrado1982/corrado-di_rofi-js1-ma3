@@ -1,11 +1,9 @@
 
-// function getRemainder(a,b) {
-//     return a % b;
-//     }
-//     const result = getRemainder(6, 4);
-//     console.log(result);
+//Question 1
 
 getRemainder = (a, b) => a % b;
     
-    const result = getRemainder(7, 4);
-    console.log(result);
+    // FOR TEST
+
+    // const result = getRemainder(7, 4);
+    // console.log(result);
