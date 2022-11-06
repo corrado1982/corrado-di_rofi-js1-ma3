@@ -25,7 +25,15 @@ async function getData() {
         if (i === 8) {
             break;
         }
-    gamesList.innerHTML += `<div class="div-containers">${result[i].name}</div>`;
+        const name = result[i].name;
+        const rating = result[i].rating;
+        const tagsLenght = result[i].tags.length;
+
+    gamesList.innerHTML += `<div class="div-containers">
+                            <h2>${name}</h2> 
+                            <p>rate: ${rating}</p>
+                            <p>tags: ${tagsLenght}</p>
+                            </div>`;
     }
     
     }
