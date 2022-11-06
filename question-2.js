@@ -28,20 +28,16 @@ gamesList.innerHTML = "";
         const rating = result[i].rating;
         const tagsLenght = result[i].tags.length;
 
-    gamesList.innerHTML += `<div class="div-containers">
+gamesList.innerHTML += `<div class="div-containers">
                             <h2>${name}</h2> 
                             <p>rate: ${rating}</p>
                             <p>tags: ${tagsLenght}</p>
-                            </div>`;
+                        </div>`;
     }
 } catch(error){
-    // console.log(error);
-    gamesList.innerHTML = error;
+    console.log(error);
+    gamesList.innerHTML = displayError("Error calling API");
 }
 }
-    // catch(error) {
-    //     console.log(error);
-    //     gamesList.innerHTML = displayError("There is problems calling API");
     
-
 getData();
