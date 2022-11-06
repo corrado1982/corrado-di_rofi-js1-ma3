@@ -3,7 +3,7 @@
 
 getRemainder = (a, b) => a % b;
     
-    // FOR TEST
+    //FOR TEST
 
     // const result = getRemainder(7, 4);
     // console.log(result);

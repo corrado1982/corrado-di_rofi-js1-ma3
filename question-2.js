@@ -1,4 +1,6 @@
 
+//Question 2
+
 function displayError(message = "Some error") {
     return `<div class="error">${message}</div>`;
 }
